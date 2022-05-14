@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_ID: $API_HASH
+      API_HASH: $API_ID
+      BOT_TOKAN: $BOT_TOKAN
+      REPLY_MASEGE: $REPLY_MASEGE
+      SESSION: $SESSION
+      CHAT_ID: $CHAT_ID
+      AUTH_USERS: $AUTH_USERS
+      STARTUP_STREAM: $STARTUP_STREAM
